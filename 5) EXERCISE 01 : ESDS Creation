@@ -1,0 +1,12 @@
+//TECN040J JOB (ACCT),'CREATE ESDS',CLASS=A,MSGCLASS=A
+//STEP1    EXEC PGM=IDCAMS
+//SYSPRINT DD SYSOUT=*
+//SYSIN    DD *
+  DEFINE CLUSTER (NAME(TECN040.PRODUCT.ESDS)  -
+                 RECORDSIZE(80,80)           -
+                 TRACKS(5,5)                 -
+                 NONINDEXED)                 -
+                 DATA (NAME(TECN040.PRODUCT.ESDS.DATA))
+/*
+//
+                                                                                       
