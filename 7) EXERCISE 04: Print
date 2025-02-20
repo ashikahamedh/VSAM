@@ -1,0 +1,6 @@
+//TECN040J JOB (ASHIK),CLASS=A,MSGCLASS=A        
+//STEP1    EXEC PGM=IDCAMS
+//SYSPRINT DD SYSOUT=*                                         
+//SYSIN    DD *                                                   
+  PRINT INDATASET(TECN040.TRAIN.DETAILS.AIX) CHAR                           
+/*  
