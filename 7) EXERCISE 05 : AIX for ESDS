@@ -1,0 +1,15 @@
+//TECN040J JOB NOTIFY=&SYSUID        
+//STEP1    EXEC PGM=IDCAMS           
+//SYSPRINT DD  SYSOUT=*              
+//SYSIN    DD  *                     
+  DEFINE AIX(                      -
+  NAME(TECN040.PRODUCT.AIX)        -
+  RELATE(TECN040.PRODUCT.ESDS)     -
+  TRACKS(10 10)                    -
+  CONTROLINTERVALSIZE(512)         -
+  VOLUME(ZAPRD6)                   -
+  KEYS(5 0)                        -
+  FREESPACE(10 10)                 -
+  RECORDSIZE(80 80)                -
+  UNIQUEKEY)                     
+/*
