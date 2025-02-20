@@ -1,0 +1,16 @@
+//TECN040J JOB (MAINFRAME,DEMO),NOTIFY=&SYSUID
+//STEP0001 EXEC PGM=IDCAMS
+//SYSPRINT DD SYSOUT=*
+//SYSIN    DD *
+  DEFINE CLUSTER(                   -
+  NAME(TECN040.TRAIN.DETAILS.KSDS)  -
+  TRACKS(5,5)                       -
+  CISZ(1024)                        -
+  RECORDSIZE(80,80)                 -
+  VOLUME(ZAPRD4)                    -
+  INDEXED                           -
+  FREESPACE(10,10)                  -
+  KEYS(8,0)
+/*
+
+          
